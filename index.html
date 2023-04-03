@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo-color.png" alt="App Logo">
+      <h1>QrCode Generator</h1>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  
+  <h1>QR Code Generator</h1>
+  <form>
+    <label for="qr-text">URL HERE..:</label>
+    <input type="text" id="qr-text" name="qr-text">
+    <button type="button" id="generate-button">Generate QR Code</button>
+  </form>
+  <div id="qr-code">
+    <div id="loading-spinner">
+      <div></div>
+  </div>
+
+  <div class="ads" style="width: 100px;">
+    <!-- Google AdSense code goes here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5778381606911327"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-5778381606911327"
+     data-ad-slot="1590346828"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+
+  <script src="qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

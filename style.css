@@ -1,0 +1,134 @@
+/*CSS code:*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+nav {
+  background-color: #0077cc;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+nav .logo h1 {
+  color: #000311;
+  font-size: 24px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+  
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #005b99;
+}
+
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+  font-family: 'Alkatra', cursive;
+}
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  margin-bottom: 10px;
+}
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0069d9;
+}
+#qr-code {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.ads {
+  position: fixed;
+  bottom: 0;
+  height: 100px; /* adjust the height as needed */
+  background-color: transparent; /* example background color */
+}
+
+  body {
+    background: linear-gradient(to bottom right, #34a31d, #0072ff);
+    height: 100vh;
+    margin: 0;
+  }
+  #loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #loading-spinner > div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: loading-spinner 0.8s linear infinite;
+  }
+  @keyframes loading-spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
